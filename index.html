@@ -41,6 +41,11 @@
       display: block;
       margin: 13px 0;
     }
+
+    .mobilecontent {
+      display: block !important;
+      max-height: none !important;
+    }
   </style>
   <!--[if mso]>
         <xml>
@@ -56,9 +61,15 @@
         </style>
         <![endif]-->
   <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
   <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700);
     @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
   </style>
   <!--<![endif]-->
   <style type="text/css">
@@ -85,27 +96,6 @@
     }
   </style>
   <style type="text/css">
-    [owa] .mj-column-per-100 {
-      width: 100% !important;
-      max-width: 100%;
-    }
-
-    [owa] .mj-column-px-250 {
-      width: 250px !important;
-      max-width: 250px;
-    }
-
-    [owa] .mj-column-per-50 {
-      width: 50% !important;
-      max-width: 50%;
-    }
-
-    [owa] .mj-column-per-33-3333333333 {
-      width: 33.3333333333% !important;
-      max-width: 33.3333333333%;
-    }
-  </style>
-  <style type="text/css">
     @media only screen and (max-width:480px) {
       table.mj-full-width-mobile {
         width: 100% !important;
@@ -115,38 +105,6 @@
         width: auto !important;
       }
     }
-
-    noinput.mj-menu-checkbox {
-      display: block !important;
-      max-height: none !important;
-      visibility: visible !important;
-    }
-
-    @media only screen and (max-width:480px) {
-      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links {
-        display: none !important;
-      }
-
-      .mj-menu-checkbox[type="checkbox"]:checked~.mj-inline-links,
-      .mj-menu-checkbox[type="checkbox"]~.mj-menu-trigger {
-        display: block !important;
-        max-width: none !important;
-        max-height: none !important;
-        font-size: inherit !important;
-      }
-
-      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links>a {
-        display: block !important;
-      }
-
-      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-close {
-        display: block !important;
-      }
-
-      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-open {
-        display: none !important;
-      }
-    }
   </style>
   <style type="text/css">
     @media (max-width:480px) {
@@ -154,7 +112,7 @@
         padding: 0px;
       }
 
-      .hide {
+      .hide-hero {
         display: none;
         mso-hide: all;
       }
@@ -208,7 +166,8 @@
         padding-bottom: 20px !important;
       }
 
-      .show {
+      .show,
+      .show>* {
         display: none;
         mso-hide: all;
       }
@@ -323,57 +282,63 @@
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
-              <div class="show outlook" style="background: #F9F9F9; background-color: #F9F9F9; margin: 0px auto; max-width: 600px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F9F9F9;background-color:#F9F9F9;width:100%;">
-                  <tbody>
-                    <tr>
-                      <td style="direction:ltr;font-size:0px;padding:10px 35px;text-align:center;">
-                        <!--[if mso | IE]>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
 
-            <tr>
-              <td
-                 align="center" class="show-outlook outlook-outlook" width="600px"
-              >
-          <![endif]-->
-                        <div style="font-family:Roboto, Arial;font-size:25px;font-weight:100;line-height:45px;text-align:center;color:#000000;">Cats Are Great</div>
-                        <!--[if mso | IE]>
-              </td>
-            </tr>
+      <!--[if !mso]><!-->
+        <div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+          <div class="show outlook" style="background: #F9F9F9; background-color: #F9F9F9; margin: 0px auto; max-width: 600px; mso-hide: all;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #F9F9F9; background-color: #F9F9F9; width: 100%; mso-hide: all;" width="100%" bgcolor="#F9F9F9">
+              <tbody>
+                <tr>
+                  <td style="direction:ltr;font-size:0px;padding:10px 35px;text-align:center;">
+                    <!--[if mso | IE]>
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
 
-            <tr>
-              <td
-                 class="show-outlook outlook-outlook" width="600px"
-              >
-          <![endif]-->
-                        <div class="mj-column-px-250 mj-outlook-group-fix show outlook" style="text-align: left; direction: ltr; vertical-align: top; width: 100%; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                            <tbody>
-                              <tr>
-                                <td style="vertical-align:top;padding:0;">
-                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-                                    <tr>
-                                      <td align="center" class="show outlook" style="padding: 10px 25px; padding-top: 0px; word-break: break-word; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                                        <div style="font-family:Roboto, Arial;font-size:13px;font-weight:100;line-height:25px;text-align:center;color:#000000;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find a box a little too small and curl up with fur</div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!--[if mso | IE]>
-              </td>
-            </tr>
+        <tr>
+          <td
+             align="center" class="show-hero-outlook" width="600px"
+          >
+      <![endif]-->
+                    <div style="font-family:Roboto, Arial;font-size:25px;font-weight:100;line-height:45px;text-align:center;color:#000000;">Cats Are Great</div>
+                    <!--[if mso | IE]>
+          </td>
+        </tr>
 
-                  </table>
-                <![endif]-->
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <tr>
+          <td
+             class="show-outlook outlook-outlook" width="600px"
+          >
+      <![endif]-->
+                    <div class="mj-column-px-250 mj-outlook-group-fix show outlook" style="font-size: 0px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%; mso-hide: all;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-hide: all;">
+                        <tbody>
+                          <tr>
+                            <td style="vertical-align:top;padding:0;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+                                <tr>
+                                  <td align="center" class="show outlook" style="font-size: 0px; padding: 10px 25px; padding-top: 0px; word-break: break-word; mso-hide: all;">
+                                    <div style="font-family: Roboto, Arial; font-size: 13px; font-weight: 100; line-height: 25px; text-align: center; color: #000000; mso-hide: all;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find a box a little too small and curl up with fur</div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!--[if mso | IE]>
+          </td>
+        </tr>
+
+              </table>
+            <![endif]-->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      <!--<![endif]-->
+
               <!--[if mso | IE]>
           </td>
         </tr>
@@ -386,8 +351,28 @@
               <!--[if mso | IE]>
             <tr>
               <td
-                 class="" width="600px"
+                 class="hide-hero-outlook outlook-outlook" width="600px"
               >
+
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="hide-hero-outlook outlook-outlook" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+              <div class="hide-hero outlook" style="margin: 0px auto; max-width: 600px; mso-hide: all;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; mso-hide: all;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+
+        <tr>
+
+            <td
+               class="" style=""
+            >
 
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
@@ -395,17 +380,17 @@
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
-              <div style="background:#F9F9F9;background-color:#F9F9F9;margin:0px auto;max-width:600px;">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F9F9F9;background-color:#F9F9F9;width:100%;">
-                  <tbody>
-                    <tr>
-                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
-                        <!--[if mso | IE]>
+                        <div style="background:#F9F9F9;background-color:#F9F9F9;margin:0px auto;max-width:600px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F9F9F9;background-color:#F9F9F9;width:100%;">
+                            <tbody>
+                              <tr>
+                                <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                                  <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
 
             <tr>
               <td
-                 class="hide-outlook" width="600px"
+                 class="hide-hero-outlook" width="600px"
               >
 
         <table
@@ -417,60 +402,75 @@
                  style="border:0;height:469px;mso-position-horizontal:center;position:absolute;top:0;width:600px;z-index:-3;" src="https://i.ibb.co/tcd5tcV/cat-jump-3.gif" xmlns:v="urn:schemas-microsoft-com:vml"
               />
       <![endif]-->
-                        <div class="hide" style="margin:0 auto;max-width:600px;">
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-                            <tr style="vertical-align:top;">
-                              <td background="https://i.ibb.co/tcd5tcV/cat-jump-3.gif" style="background:#F9F9F9 url(https://i.ibb.co/tcd5tcV/cat-jump-3.gif) no-repeat center center / cover;background-position:center center;background-repeat:no-repeat;padding:100px 0px;vertical-align:top;" height="269">
-                                <!--[if mso | IE]>
+                                  <div class="hide-hero" style="margin:0 auto;max-width:600px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                      <tr style="vertical-align:top;">
+                                        <td background="https://i.ibb.co/tcd5tcV/cat-jump-3.gif" style="background:#F9F9F9 url(https://i.ibb.co/tcd5tcV/cat-jump-3.gif) no-repeat center center / cover;background-position:center center;background-repeat:no-repeat;padding:100px 0px;vertical-align:top;" height="269">
+                                          <!--[if mso | IE]>
         <table
            border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
         >
           <tr>
             <td  style="">
       <![endif]-->
-                                <div class="mj-hero-content" style="margin:0px auto;">
-                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
-                                    <tr>
-                                      <td style>
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
-                                          <tr>
-                                            <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:0px;word-break:break-word;">
-                                              <div style="font-family:Roboto, Arial;font-size:20px;font-weight:100;line-height:45px;text-align:left;color:#000000;">Cats Are Great</div>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
-                                              <div class="mj-column-px-250 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                                                  <tbody>
+                                          <div class="mj-hero-content" style="margin:0px auto;">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+                                              <tr>
+                                                <td style>
+                                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
                                                     <tr>
-                                                      <td style="vertical-align:top;padding:0;">
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-                                                          <tr>
-                                                            <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;word-break:break-word;">
-                                                              <div style="font-family:Roboto, Arial;font-size:13px;line-height:18px;text-align:left;color:#000000;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find a box a little too small and curl up with fur</div>
-                                                            </td>
-                                                          </tr>
-                                                        </table>
+                                                      <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:0px;word-break:break-word;">
+                                                        <div style="font-family:Roboto, Arial;font-size:20px;font-weight:100;line-height:45px;text-align:left;color:#000000;">Cats Are Great</div>
                                                       </td>
                                                     </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </div>
-                                <!--[if mso | IE]>
+                                                    <tr>
+                                                      <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                                        <div class="mj-column-px-250 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td style="vertical-align:top;padding:0;">
+                                                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+                                                                    <tr>
+                                                                      <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;word-break:break-word;">
+                                                                        <div style="font-family:Roboto, Arial;font-size:13px;line-height:18px;text-align:left;color:#000000;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find a box a little too small and curl up with fur</div>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <!--[if mso | IE]>
             </td>
           </tr>
         </table>
       <![endif]-->
-                              </td>
-                            </tr>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+
+              </td>
+            </tr>
+
+                  </table>
+                <![endif]-->
+                                </td>
+                              </tr>
+                            </tbody>
                           </table>
                         </div>
                         <!--[if mso | IE]>
@@ -478,8 +478,9 @@
         </tr>
       </table>
 
-              </td>
-            </tr>
+            </td>
+
+        </tr>
 
                   </table>
                 <![endif]-->
@@ -509,8 +510,8 @@
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
-              <div class="show outlook" style="background: #F9F9F9; background-color: #F9F9F9; margin: 0px auto; max-width: 600px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F9F9F9;background-color:#F9F9F9;width:100%;">
+              <div class="show outlook" style="background: #F9F9F9; background-color: #F9F9F9; margin: 0px auto; max-width: 600px; mso-hide: all;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #F9F9F9; background-color: #F9F9F9; width: 100%; mso-hide: all;" width="100%" bgcolor="#F9F9F9">
                   <tbody>
                     <tr>
                       <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
@@ -523,15 +524,15 @@
                class="show-outlook outlook-outlook" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
-                        <div class="mj-column-per-100 mj-outlook-group-fix show outlook" style="text-align: left; direction: ltr; vertical-align: top; width: 100%; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                        <div class="mj-column-per-100 mj-outlook-group-fix show outlook" style="font-size: 0px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%; mso-hide: all;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-hide: all;">
                             <tbody>
                               <tr>
                                 <td style="vertical-align:top;padding:0;">
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
-                                      <td align="center" class="show outlook" style="padding: 10px 25px; word-break: break-word; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                      <td align="center" class="show outlook" style="font-size: 0px; padding: 10px 25px; word-break: break-word; mso-hide: all;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-spacing: 0px; mso-hide: all;">
                                           <tbody>
                                             <tr>
                                               <td style="width:550px;">
@@ -814,7 +815,13 @@
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
                                       <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:30px;word-break:break-word;">
-                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;"><img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif"> <span style="font-size: 20px; color: #000000">Subhead 1</span><br><br>I will pester for food when you're in the kitchen even if it's salad . Leave dead animals as gifts eat a plant</div>
+                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;">
+                                          <!--[if !mso]><!-->
+                                            <div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+                                              <img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif">
+                                            </div>
+                                          <!--<![endif]-->
+                                          <span style="font-size: 20px; color: #000000">Subhead 1</span><br><br>I will pester for food when you're in the kitchen even if it's salad . Leave dead animals as gifts eat a plant</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -838,7 +845,13 @@
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
                                       <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:30px;word-break:break-word;">
-                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;"><img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif"> <span style="font-size: 20px; color: #000000">Subhead 2</span><br><br>Kill a hand yet purr bat Gate keepers of hell lie on your belly and purr when you are asleep</div>
+                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;">
+                                          <!--[if !mso]><!-->
+                                            <div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+                                              <img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif">
+                                            </div>
+                                          <!--<![endif]-->
+                                          <span style="font-size: 20px; color: #000000">Subhead 2</span><br><br>Kill a hand yet purr bat Gate keepers of hell lie on your belly and purr when you are asleep</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -900,7 +913,14 @@
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
                                       <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:30px;word-break:break-word;">
-                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;"><img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif"> <span style="font-size: 20px; color: #000000">Subhead 3</span><br><br>Or i show my fluffy belly but it's a trap! if you pet it i will tear up your hand. Sit and stare the fat cat sat on the mat</div>
+                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;">
+                                          <!--[if !mso]><!-->
+                                            <div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+                                              <img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif">
+                                            </div>
+                                          <!--<![endif]-->
+                                          <span style="font-size: 20px; color: #000000">Subhead 3</span><br><br>Or i show my fluffy belly but it's a trap! if you pet it i will tear up your hand. Sit and stare the fat cat sat on the mat
+                                        </div>
                                       </td>
                                     </tr>
                                   </table>
@@ -924,7 +944,13 @@
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
                                       <td align="left" style="font-size:0px;padding:10px 25px;padding-bottom:30px;word-break:break-word;">
-                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;"><img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif"> <span style="font-size: 20px; color: #000000">Subhead 4</span><br><br>Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch</div>
+                                        <div style="font-family:Roboto, Arial;font-size:15px;font-weight:100;line-height:22px;text-align:left;color:#000000;">
+                                          <!--[if !mso]><!-->
+                                            <div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+                                              <img style="padding-right: 12px;" width="40px" src="https://i.ibb.co/NCJC2Ms/cat-paw-2.gif">
+                                            </div>
+                                          <!--<![endif]-->
+                                          <span style="font-size: 20px; color: #000000">Subhead 4</span><br><br>Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -1081,13 +1107,13 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td align="center" class="show outlook" style="padding: 10px 25px; word-break: break-word; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                                        <div style="font-family:Roboto, Arial;font-size:11px;font-weight:100;line-height:1;text-align:center;color:#000000;"><a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">View the SPECIAL</a></div>
+                                      <td align="center" class="show outlook" style="font-size: 0px; padding: 10px 25px; word-break: break-word; mso-hide: all;">
+                                        <div style="font-family: Roboto, Arial; font-size: 11px; font-weight: 100; line-height: 1; text-align: center; color: #000000; mso-hide: all;"><a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">View the SPECIAL</a></div>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td align="center" class="show outlook no-padding" style="padding: 10px 25px; word-break: break-word; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                                        <div style="font-family:Roboto, Arial;font-size:11px;font-weight:100;line-height:1;text-align:center;color:#000000;"><a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">MOBILE ONLY cat collection ></a></div>
+                                      <td align="center" class="show outlook no-padding" style="font-size: 0px; padding: 10px 25px; word-break: break-word; mso-hide: all;">
+                                        <div style="font-family: Roboto, Arial; font-size: 11px; font-weight: 100; line-height: 1; text-align: center; color: #000000; mso-hide: all;"><a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">MOBILE ONLY cat collection ></a></div>
                                       </td>
                                     </tr>
                                     <tr>
@@ -1433,23 +1459,73 @@
             </tr>
           <![endif]-->
               <!-- Footer -->
+              <!-- <mj-section css-class="hide" background-color="#E6E6E6">
+        <mj-column padding-left="25px" padding-bottom="110px" padding-right="25px">
+          <mj-navbar base-url="https://www.apple.com">
+            <mj-navbar-link font-family="Roboto, Arial" href="http://www.apple.com" color="#858585" css-class="navbar-link">Link 1 <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-navbar-link font-family="Roboto, Arial" href="http://www.apple.com" color="#858585">Link 2 <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-navbar-link css-class="hide" href="http://www.apple.com" font-family="Roboto, Arial" href="/templates" color="#858585">1-800-MY-CATSS <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-navbar-link font-family="Roboto, Arial" href="http://www.apple.com" color="#858585">Link 3</mj-navbar-link>
+            <mj-divider border-color="lightgrey" border-width="1px" padding-bottom="10px"></mj-divider>
+            <mj-image src="https://spacergif.org/spacer.gif" height="20px"/>
+            <mj-text color="#858585" font-family="Roboto, Arial" font-weight="100" line-height="18px">
+              Some features may not be available for all countries or all area. <a style="text-decoration: none;" href="http://www.apple.com">Click here</a> to see complete list.
+              <br />
+              <br />
+              TM and 	&copy; 2016 Company Inc. 123 Main Street, San Francisco, CA 94109.
+              <br />
+              <br />
+              All Rights Reserved <img src="https://spacergif.org/spacer.gif" width="2px"/> | <img src="https://spacergif.org/spacer.gif" width="2px"/> Privacy Policy <img src="https://spacergif.org/spacer.gif" width="2px"/> | <img src="https://spacergif.org/spacer.gif" width="2px"/> My Cat ID
+              <br />
+              <br />
+              If you prefer not to receive commerical email from us, or if you've changed your email address, please <a style="text-decoration: none;" href="http://www.apple.com">click here</a>
+            </mj-text>
+          </mj-navbar>
+        </mj-column>
+      </mj-section> -->
+              <!-- <mj-section css-class="show outlook" background-color="#E6E6E6">
+        <mj-column css-class="show outlook" padding-left="25px" padding-bottom="110px" padding-right="25px">
+          <mj-navbar css-class="show outlook" base-url="https://www.apple.com">
+            <mj-navbar-link css-class="show outlook" font-family="Roboto, Arial" href="http://www.apple.com" color="#858585" css-class="navbar-link">Link 1 <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-navbar-link css-class="show outlook" font-family="Roboto, Arial" href="http://www.apple.com" color="#858585">Link 2 <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-navbar-link css-class="hide" href="http://www.apple.com" font-family="Roboto, Arial" href="/templates" color="#858585">1-800-MY-CATSS <img src="https://spacergif.org/spacer.gif" width="20px"/>|</mj-navbar-link>
+            <mj-divider css-class="show outlook" border-color="lightgrey" border-width="1px" padding-bottom="10px"></mj-divider>
+            <mj-navbar-link css-class="show outlook" font-family="Roboto, Arial" href="http://www.apple.com" color="#858585">Link 3</mj-navbar-link>
+            <mj-divider css-class="show outlook" border-color="lightgrey" border-width="1px" padding-bottom="10px"></mj-divider>
+            <mj-image css-class="show outlook" src="https://spacergif.org/spacer.gif" height="20px"/>
+            <mj-text css-class="show outlook" color="#858585" font-family="Roboto, Arial" font-weight="100">
+              Some features may not be available for all countries or all area. <a style="text-decoration: none;" href="http://www.apple.com">Click here</a> to see complete list.
+              <br css-class="show outlook" />
+              <br css-class="show outlook" />
+              TM and 	&copy; 2016 Company Inc. 123 Main Street, San Francisco, CA 94109.
+              <br css-class="show outlook"  />
+              <br css-class="show outlook" />
+              All Rights Reserved <img src="https://spacergif.org/spacer.gif" width="2px"/> | <img src="https://spacergif.org/spacer.gif" width="2px"/> Privacy Policy <img css-class="show outlook" src="https://spacergif.org/spacer.gif" width="2px"/> | <img css-class="show outlook" src="https://spacergif.org/spacer.gif" width="2px"/> My Cat ID
+              <br css-class="show outlook" />
+              <br css-class="show outlook" />
+              If you prefer not to receive commerical email from us, or if you've changed your email address, please <a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">click here</a>
+
+            </mj-text>
+          </mj-navbar>
+        </mj-column>
+      </mj-section> -->
               <!--[if mso | IE]>
             <tr>
               <td
-                 class="hide-outlook" width="600px"
+                 class="" width="600px"
               >
 
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="hide-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
-              <div class="hide" style="background:#E6E6E6;background-color:#E6E6E6;margin:0px auto;max-width:600px;">
+              <div style="background:#E6E6E6;background-color:#E6E6E6;margin:0px auto;max-width:600px;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#E6E6E6;background-color:#E6E6E6;width:100%;">
                   <tbody>
                     <tr>
-                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                      <td style="direction:ltr;font-size:0px;padding:20px 0px;text-align:center;">
                         <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
 
@@ -1463,257 +1539,19 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                             <tbody>
                               <tr>
-                                <td style="vertical-align:top;padding:0;padding-right:25px;padding-bottom:110px;padding-left:25px;">
+                                <td style="vertical-align:top;padding:0;">
                                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                     <tr>
-                                      <td align="center" style="font-size:0px;word-break:break-word;">
-                                        <div class="mj-inline-links" style>
-                                          <!--[if mso | IE]>
-
-          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
-            <tr>
-
-
-
-          <td
-             style="padding:15px 10px;" class="navbar-link-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link navbar-link" href="http://www.apple.com/" target="_blank" style="display:inline-block;color:#858585;font-family:Roboto, Arial;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"> Link 1 <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-
-
-          <td
-             style="padding:15px 10px;" class=""
-          >
-
-    <![endif]-->
-                                          <a class="mj-link" href="http://www.apple.com/" target="_blank" style="display:inline-block;color:#858585;font-family:Roboto, Arial;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"> Link 2 <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-
-
-          <td
-             style="padding:15px 10px;" class="hide-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link hide" href="http://www.apple.com/" target="_blank" style="display:inline-block;color:#858585;font-family:Roboto, Arial;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"> 1-800-MY-CATSS <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-
-
-          <td
-             style="padding:15px 10px;" class=""
-          >
-
-    <![endif]-->
-                                          <a class="mj-link" href="http://www.apple.com/" target="_blank" style="display:inline-block;color:#858585;font-family:Roboto, Arial;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"> Link 3 </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-    <![endif]-->
-                                          <p style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:100%;">
+                                      <td align="center" style="font-size:0px;padding:0 10px;word-break:break-word;">
+                                        <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:center;color:#858585;">
+                                          <p style="Margin:0; padding-bottom:10px; font-size:18px; line-height:35px; Margin-bottom:10px; color:#858585; font-family: 'Roboto', Arial; font-weight: 100;">
+                                            <a href="http://www.apple.com" name="footer_privacy" style="color:#858585; text-decoration:none; font-family: " roboto, arial;""> Link 1 </a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://www.apple.com/" style="text-decoration:none; color:#858585;"> Link 2 </a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://email.apple.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlTQGjmR9kDzfwzbMzackp9f3F8d45ze2zfbW8hYB6AzgB7gaIYB3tN5qwvasVXMtX%3DYQpglLjHJlTQGNXlMNF3fFUYHWCzdBj2rGzgJpzem2KonGoezgzbfUyABevzgl4CepTMC&_ei_=EolaGGF4SNMvxFF7KucKuWP7XpARYKtbBY43fLBYxvXNpGx2Z89j4M" style="text-decoration:none; color:#858585;">1-800-MY-CATSS </a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://email.ugg.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlTQGjmR9kDzfwzbMzackp9f3F8d45ze2zfbW8hYB6AzgB7gaIYB3tN5qwvasVXMtX%3DYQpglLjHJlTQGNXlMNF3fFUYHWCzdBj2rGzgJpzem2KonGoezgzbfUyABevzgl4CepTMC&_ei_=EolaGGF4SNMvxFF7KucKuWP7XpARYKtbBY43fLBYxvXNpGx2Z89j4M" style="text-decoration:none; color:#858585;">Link 3</a>
                                           </p>
-                                          <!--[if mso | IE]>
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:500px;" role="presentation" width="500px"
-        >
-          <tr>
-            <td style="height:0;line-height:0;">
-              &nbsp;
-            </td>
-          </tr>
-        </table>
-      <![endif]-->
-                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                            <tbody>
-                                              <tr>
-                                                <td style="width:500px;">
-                                                  <img height="20" src="https://spacergif.org/spacer.gif" style="border:0;display:block;outline:none;text-decoration:none;height:20px;width:100%;font-size:13px;" width="500">
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                          <div style="font-family:Roboto, Arial;font-size:13px;font-weight:100;line-height:18px;text-align:left;color:#858585;">Some features may not be available for all countries or all area. <a style="text-decoration: none;" href="http://www.apple.com">Click here</a> to see complete list. <br>
-                                            <br> TM and &copy; 2016 Company Inc. 123 Main Street, San Francisco, CA 94109. <br>
-                                            <br> All Rights Reserved <img src="https://spacergif.org/spacer.gif" width="2px"> | <img src="https://spacergif.org/spacer.gif" width="2px"> Privacy Policy <img src="https://spacergif.org/spacer.gif" width="2px"> | <img src="https://spacergif.org/spacer.gif" width="2px"> My Cat ID <br>
-                                            <br> If you prefer not to receive commerical email from us, or if you've changed your email address, please <a style="text-decoration: none;" href="http://www.apple.com">click here</a></div>
-                                          <!--[if mso | IE]>
-
-            </tr></table>
-
-    <![endif]-->
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!--[if mso | IE]>
-            </td>
-
-        </tr>
-
-                  </table>
-                <![endif]-->
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]>
-          </td>
-        </tr>
-      </table>
-
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                 class="show-outlook outlook-outlook" width="600px"
-              >
-
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="show-outlook outlook-outlook" style="width:600px;" width="600"
-      >
-        <tr>
-          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]-->
-              <div class="show outlook" style="background: #E6E6E6; background-color: #E6E6E6; margin: 0px auto; max-width: 600px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#E6E6E6;background-color:#E6E6E6;width:100%;">
-                  <tbody>
-                    <tr>
-                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-                        <!--[if mso | IE]>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-
-        <tr>
-
-            <td
-               class="show-outlook outlook-outlook" style="vertical-align:top;width:600px;"
-            >
-          <![endif]-->
-                        <div class="mj-column-per-100 mj-outlook-group-fix show outlook" style="text-align: left; direction: ltr; vertical-align: top; width: 100%; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                            <tbody>
-                              <tr>
-                                <td style="vertical-align:top;padding:0;padding-right:25px;padding-bottom:110px;padding-left:25px;">
-                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-                                    <tr>
-                                      <td align="center" class="show outlook" style="word-break: break-word; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;">
-                                        <div class="mj-inline-links" style>
-                                          <!--[if mso | IE]>
-
-          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
-            <tr>
-
-
-
-          <td
-             style="padding:15px 10px;" class="show-outlook outlook-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link show outlook" href="http://www.apple.com/" target="_blank" style="color: #858585; font-family: Roboto, Arial; font-weight: normal; text-decoration: none; text-transform: uppercase; padding: 15px 10px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;"> Link 1 <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-
-
-          <td
-             style="padding:15px 10px;" class="show-outlook outlook-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link show outlook" href="http://www.apple.com/" target="_blank" style="color: #858585; font-family: Roboto, Arial; font-weight: normal; text-decoration: none; text-transform: uppercase; padding: 15px 10px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;"> Link 2 <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-
-
-          <td
-             style="padding:15px 10px;" class="hide-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link hide" href="http://www.apple.com/" target="_blank" style="display:inline-block;color:#858585;font-family:Roboto, Arial;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"> 1-800-MY-CATSS <img src="https://spacergif.org/spacer.gif" width="20px">| </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-    <![endif]-->
-                                          <p style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:100%;">
+                                          <p style="Margin:0; padding-bottom:10px; text-align: left; font-size:10px; line-height:15px; Margin-bottom:10px; color:#858585; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;"> Some features may not be available for all countries or all area. <a style="text-decoration: none;" href="http://www.apple.com">Click here</a> to see complete list. </p>
+                                          <p style="Margin:0; padding-bottom:10px; text-align: left; font-size:10px; line-height:15px; Margin-bottom:10px; color:#858585; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;"> TM and &copy; 2016 Company Inc. 123 Main Street, San Francisco, CA 94109. </p>
+                                          <p style="Margin:0; padding-bottom:10px; text-align: left; font-size:10px; line-height:15px; Margin-bottom:10px; color:#858585; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;"> All Rights Reserved &nbsp;&nbsp;|&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp; My Cat ID </p>
+                                          <p style="Margin:0; padding-bottom:10px; text-align: left; font-size:10px; line-height:15px; Margin-bottom:10px; color:#858585; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;"> If you prefer not to receive commerical email from us, or if you've changed your email address, please <a style="text-decoration: none;" href="http://www.apple.com">click here</a>
                                           </p>
-                                          <!--[if mso | IE]>
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:500px;" role="presentation" width="500px"
-        >
-          <tr>
-            <td style="height:0;line-height:0;">
-              &nbsp;
-            </td>
-          </tr>
-        </table>
-
-
-          <td
-             style="padding:15px 10px;" class="show-outlook outlook-outlook"
-          >
-
-    <![endif]-->
-                                          <a class="mj-link show outlook" href="http://www.apple.com/" target="_blank" style="color: #858585; font-family: Roboto, Arial; font-weight: normal; text-decoration: none; text-transform: uppercase; padding: 15px 10px; display: none; font-size: 0; max-height: 0; line-height: 0; mso-hide: all;"> Link 3 </a>
-                                          <!--[if mso | IE]>
-
-          </td>
-
-    <![endif]-->
-                                          <p style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:100%;">
-                                          </p>
-                                          <!--[if mso | IE]>
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:500px;" role="presentation" width="500px"
-        >
-          <tr>
-            <td style="height:0;line-height:0;">
-              &nbsp;
-            </td>
-          </tr>
-        </table>
-      <![endif]-->
-                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                            <tbody>
-                                              <tr>
-                                                <td style="width:500px;">
-                                                  <img height="20" src="https://spacergif.org/spacer.gif" style="border:0;display:block;outline:none;text-decoration:none;height:20px;width:100%;font-size:13px;" width="500">
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                          <div style="font-family:Roboto, Arial;font-size:13px;font-weight:100;line-height:1;text-align:left;color:#858585;">Some features may not be available for all countries or all area. <a style="text-decoration: none;" href="http://www.apple.com">Click here</a> to see complete list. <br css-class="show outlook">
-                                            <br css-class="show outlook"> TM and &copy; 2016 Company Inc. 123 Main Street, San Francisco, CA 94109. <br css-class="show outlook">
-                                            <br css-class="show outlook"> All Rights Reserved <img src="https://spacergif.org/spacer.gif" width="2px"> | <img src="https://spacergif.org/spacer.gif" width="2px"> Privacy Policy <img css-class="show outlook" src="https://spacergif.org/spacer.gif" width="2px"> | <img css-class="show outlook" src="https://spacergif.org/spacer.gif" width="2px"> My Cat ID <br css-class="show outlook">
-                                            <br css-class="show outlook"> If you prefer not to receive commerical email from us, or if you've changed your email address, please <a css-class="show outlook" style="text-decoration: none;" href="http://www.apple.com">click here</a></div>
-                                          <!--[if mso | IE]>
-
-            </tr></table>
-
-    <![endif]-->
                                         </div>
                                       </td>
                                     </tr>
